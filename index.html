@@ -7,20 +7,22 @@
     <title>Cats and JavaScript</title>
     <!-- CSS stylesheet -->
     <link rel="stylesheet" href="styles/main.css">
+     <!-- Scripts -->
+    <script src="scripts/main.js"></script>
     
 </head>
 <body>
     <header>
-        <h1>Meet My Cat Spoons</h1>
+        <h1>Meet Spoons</h1>
     </header>
 
     
-    <article id="intro">
+    <div class="row">
         <section class="photo">
         
-            <img id="kitten" src="images/young_spoons.jpg" alt="Photo of a gray kitten inside a blue Little Free Library">
+            <img id="kitten" src="images/young_spoons.jpg" alt="Photo of a gray kitten inside a blue Little Free Library" onclick="changeImage()">
     
-            <p>Click on this image to show what Spoons looks like all grown up!</p>
+            <p class="caption">Click on this image to show what Spoons looks like all grown up!</p>
         
         </section>
         
@@ -28,48 +30,38 @@
         
             <h2>Spoon's Adoption Story</h2>
         
-            <p>We adopted Spoons from a local animal shelter when he was a 3-month-old kitten back in 2020. He was energetic and loved stealing all kinds of human food- even broccoli! In this photo, he was exploring the inside of my family's Little Free Library.</p>
+            <p>My family and I adopted Spoons from a local animal shelter back in 2020 when he was just a 3-month-old kitten. He was energetic and loved stealing and eating all kinds of human food - even broccoli! In this photo, he was exploring the inside of my family's Little Free Library.</p>
         
         </section>
-    </article>
+    </div>
     
     
-    <article id="current">
+    <div class="row">
         <section class="photo">
             
-            <img id="friends" src="images/spoons_and_friends.jpg" alt="Photo of a gray cat playing with two Pomeranian puppies outside">  
+            <img id="friends" src="images/spoons_and_friends.jpg" alt="Photo of a gray cat playing with two Pomeranian puppies outside" onmouseenter="showText()" onmouseleave="hideText()">  
         
-            <p>Move your mouse over this photo to meet Spoon's friends!</p>
-            
+            <p class="caption">Move your mouse over this photo to meet Spoon's friends!</p>
+                
         </section>
             
             
         <section class="text">
             
+            <p id="pop-up-text" >        
+            </p>
+
             <h2>Spoon's Life Now</h2>
             
             <p>Spoons is now 3-years-old and is as silly and problematic as ever. His favorite activities include playing fetch, napping, and hanging out with his puppy friends.</p>
             
         </section>
-        </article>
+    </div>
 
 
     <footer>
-        <p>This page was made by Clare Meyers for an assignment for the University of Florida course <b>Introduction to Web Apps</b>.</p>
+        <p>This <a href="https://github.com/ClareMeyers/Assignment-10-Website-JavaScript-project">page</a> was made for an assignment on DOM and JavaScript Events for the University of Florida course <b>Introduction to Web Apps</b>. All photos and text belong to Clare Meyers.</p>
      </footer>
         
 </body>
- </html>
-        
-
-
-
-
-
-
-
-
-
-
-
- 
+</html>

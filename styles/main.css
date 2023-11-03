@@ -7,10 +7,9 @@ html {
 }
 
 header {
-    background: #ebf4fb;;
+    background: #fff;;
     padding: .5rem;
     margin: 0;
-    align-items: center;
 }
 
 h1 {
@@ -20,10 +19,18 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    font-size: 30px;
+    color: #000;
+    padding: auto;
+    text-align: left;
+}
+
 img {
     width: 350px; 
     height: 420px; 
-    padding: 1rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
 }
 
 body {
@@ -32,8 +39,56 @@ body {
 }
 
 p {
-    font-size: 16px;
+    font-size: 18px;
     color: #000;
     line-height: 1.5;
 }
 
+.text {
+    padding: 2rem;
+    margin: 2rem;
+    background: #ebf4fb;
+}
+
+.row {
+  display: flex;  
+  flex-direction: row;
+}
+
+.caption {
+    font-size: 14px;
+    padding-left: 2rem;
+}
+
+#pop-up-text {
+    background-color: #ebf4fb;
+    width: 200px;
+}
+
+footer {
+    background: #fff;
+    padding: 1rem;
+    margin: 0;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 400px) {
+    body {
+        font-size: 14px; 
+        align-items: center;
+    }
+    img {
+        padding: 1rem;
+    }
+    .caption {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .row {
+        flex-direction: column; 
+    }
+    .photo {
+        text-align: center; /* Center-align the photos */
+    }
+}
